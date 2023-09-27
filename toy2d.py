@@ -235,7 +235,7 @@ def main():
     parser.add_argument("--hidden_dim", type=int, default=50)
 
     parser.add_argument("--expname", type=str, default="")
-    parser.add_argument("--load", type=str, default=None)
+    parser.add_argument("--load", action="store_true", help="Load checkpoint or not")
     parser.add_argument("--save", action="store_true")
     parser.add_argument("--savefig", action="store_true")
     parser.add_argument("--reduce_extreme", action="store_true")
